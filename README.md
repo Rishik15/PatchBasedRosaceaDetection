@@ -5,7 +5,7 @@
 - `preprocessing/crop_face.ipynb`: Crops and aligns faces to 130x150 using the eye coordinates  
 - `utils.py`: Stores patch configurations (small, medium, large) and the masking function  
 - `train.py`: Contains the training loop, pipeline function, and evaluation logic  
-- `model_training.py`: Main entry point to train and evaluate models with different patch sizes (`small`, `medium`, `large`)  
+- `run_experiments.py`: Main entry point to train and evaluate models with different patch sizes (`small`, `medium`, `large`)  
 
 ---
 
@@ -37,9 +37,9 @@ Run `crop_face.ipynb` to crop and align faces using `coord.dat`.
 Run:
 
 ```bash
-python model_training.py --patch_size small
-python model_training.py --patch_size medium
-python model_training.py --patch_size large
+python run_experiments.py --patch_size small
+python run_experiments.py --patch_size medium
+python run_experiments.py --patch_size large
 ```
 → Trains models on selected patch size  
 → Evaluates on validation and test sets  
